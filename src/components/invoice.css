@@ -1,0 +1,95 @@
+.container{
+background:#f4f4f4;
+padding:30px;
+}
+
+.invoice{
+background:white;
+width:900px;
+margin:auto;
+border:1px solid #bbb;
+padding:15px;
+font-family:Arial;
+}
+
+.header{
+display:flex;
+align-items:flex-start;
+}
+
+.logo{
+width:90px;
+margin-right:10px;
+}
+
+.company h2{
+margin:0;
+color:#c44;
+}
+
+.invoiceTitle{
+background:#ddd;
+text-align:center;
+font-weight:bold;
+padding:6px;
+margin-top:10px;
+border:1px solid #bbb;
+}
+
+.infoGrid{
+display:flex;
+margin-top:10px;
+}
+
+.left,.right{
+flex:1;
+padding:10px;
+}
+
+.row{
+display:flex;
+justify-content:space-between;
+border-bottom:1px solid #ddd;
+padding:6px 0;
+}
+
+.summaryBar{
+display:flex;
+justify-content:space-between;
+background:#ddd;
+padding:6px;
+border:1px solid #bbb;
+margin-top:10px;
+font-weight:bold;
+}
+
+.billTable{
+width:100%;
+border-collapse:collapse;
+margin-top:5px;
+}
+
+.billTable th,.billTable td{
+border:1px solid #bbb;
+padding:6px;
+text-align:center;
+}
+
+.totals{
+margin-top:10px;
+width:40%;
+margin-left:auto;
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:5px;
+}
+
+.words{
+grid-column:span 2;
+margin-top:10px;
+}
+
+.note{
+margin-top:10px;
+font-size:13px;
+}
