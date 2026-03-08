@@ -84,6 +84,8 @@
 	font-size: 12px;
 	border: none;
 	resize: none;
+	height: 3em;
+  width: 20em;
 }
 
 .row {
@@ -144,7 +146,7 @@
 	grid-column: span 2;
 	margin-top: 10px;
 	display: flex;
-	gap: 110px;
+	gap: 30px;
 }
 
 .note {

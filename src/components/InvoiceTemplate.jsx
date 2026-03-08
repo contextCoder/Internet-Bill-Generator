@@ -25,10 +25,15 @@ const downloadPDF = async () => {
   pdf.save("invoice.pdf");
 };
 	
-	function InputFields({ label, placeholder , value, bg = false}) {
+	function InputFields({ label, placeholder , value, saveData ,bg = false}) {
 		return (
 			<div className="row-input">
-				<input className={`master-input ${bg ? 'bg' : ''}`} type="text" placeholder={placeholder} value={value} />
+				<input
+					className={`master-input ${bg ? 'bg' : ''}`} 
+					type="text" 
+					placeholder={placeholder} 
+					value={value}
+				/>
 			</div>
 		)
 	}
