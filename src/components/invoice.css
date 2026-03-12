@@ -115,7 +115,7 @@
   padding:8px;
 }
 
-/* ---- INPUT FIX ---- */
+/* ---- INPUT FIX (MOBILE SAFE) ---- */
 
 .master-input{
   width:100%;
@@ -123,12 +123,19 @@
   outline:none;
   font-size:13px;
   padding:2px 0;
-  background:transparent;
-  color: #000
+
+  background-color:#ffffff;
+  color:#000000;
+
+  -webkit-text-fill-color:#000000;
+  -webkit-appearance:none;
+  appearance:none;
 }
 
 .master-input.bg{
   background:#eef3ff;
+  color:#000;
+  -webkit-text-fill-color:#000;
 }
 
 .master-textArea{
@@ -139,10 +146,27 @@
   outline:none;
   font-size:14px;
   line-height:18px;
+
+  background-color:#ffffff;
+  color:#000000;
+
   white-space:pre-wrap;
   overflow:hidden;
-  color: #000;
+
+  -webkit-text-fill-color:#000000;
+  -webkit-appearance:none;
+  appearance:none;
 }
+
+/* Fix autofill issue on mobile browsers */
+
+input:-webkit-autofill,
+textarea:-webkit-autofill {
+  -webkit-text-fill-color:#000 !important;
+  transition: background-color 5000s ease-in-out 0s;
+}
+
+/* ---- REST OF YOUR CSS ---- */
 
 .summaryBar{
   display:flex;
